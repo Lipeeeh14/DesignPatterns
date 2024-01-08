@@ -1,5 +1,12 @@
-﻿using DesignPatterns.PatternsCriacao.FactoryMethod;
+﻿using DesignPatterns.PatternsCriacao.AbstractFactory;
+using DesignPatterns.PatternsCriacao.FactoryMethod;
+using DesignPatterns.PatternsCriacao.Singleton;
 
-ClientFactory clientFactory = new ClientFactory();
+//ClientFactory clientFactory = new();
+//clientFactory.ExecutarCriacaoProduto();
 
-clientFactory.ExecutarCriacaoProduto();
+//ClientAbstractFactory clientAbstractFactory = new();
+//clientAbstractFactory.ConsultarRotinaAluno();
+
+ClientSingleton clientSingleton = new();
+clientSingleton.ConsumirDB();
