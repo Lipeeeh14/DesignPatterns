@@ -3,6 +3,9 @@ using DesignPatterns.PatternsCriacao.Builder;
 using DesignPatterns.PatternsCriacao.FactoryMethod;
 using DesignPatterns.PatternsCriacao.Prototype;
 using DesignPatterns.PatternsCriacao.Singleton;
+using DesignPatterns.PatternsEstrutural.Adapter;
+
+// Criação
 
 //ClientFactory clientFactory = new();
 //clientFactory.ExecutarCriacaoProduto();
@@ -16,5 +19,11 @@ using DesignPatterns.PatternsCriacao.Singleton;
 //ClientBuilder client = new();
 //client.ConsumirDadosStudio();
 
-ClientPrototype client = new();
-client.ConsumirServico();
+//ClientPrototype client = new();
+//client.ConsumirServico();
+
+// Estrutural
+
+CloudComputing cloud = new();
+
+cloud.ProcessarContas("setembro");
